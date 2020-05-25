@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue - calc</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="line">
+      <input @keyup.enter='calc()' type="text" v-model="result" placeholder="0" />
+      <button class="cell num" @click="input(num)" v-for="num in nums">{{num}}</button>
+      <button class="cell op" @click="input(op)" v-for="op in oper">{{op}}</button>
+      <button class="cell op" @click="reset()">C</button>
+      <button class="cell op" @click="calc()">=</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+* {
+  font-family: 'Gilroy', sans-serif;
+  transition: all .3s;
+  font-weight: 600;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* width: 200px; */
+  
+}
+input[type="text"] {
+  width: 200px;
+  border: none;
+  text-align: right;
+  padding: 5px 5px;
+  outline: none;
+  font-size: 18px;
+  box-shadow: 0 3px 15px gray;
+}
+
+.line {
+  box-shadow: 0 3px 15px gray;
+  max-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* width: 100%; */
+}
+
+.cell {
+  flex: 33%;
+  border: none;
+  height: 50px;
+  font-size: 18px;
+}
+.num {
+  background-color: #243849;
+  color: #fff;
+  font-weight: 400;
+}
+.num:hover {
+  cursor: pointer;
+  background-color: #182530;
+}
+.op:hover {
+  cursor: pointer;
+  background-color: #e9ab4e93;
+}
+.op {
+  background-color: #ff9900;
+  color: #243849;
+}
